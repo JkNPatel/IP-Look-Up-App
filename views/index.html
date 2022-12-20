@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IP Look Up App</title>
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="/stylesheets/bootstrap-tagsinput.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">IP Look Up App</span>
+        </div>
+    </nav>
+    <div class="container my-5">
+        <h3>IP Look Up Form</h3>
+        <div class="my-3">
+            <label for="ips" class="form-label">*Press enter,comma or tab to add tags</label>
+            <input class="form-control" id="ips" required />
+            <div class="text-danger" id="message"></div>
+        </div>
+        <div class="my-3">
+            <button type="button" id="submit" class="btn btn-dark">Get Data</button>
+        </div>
+    </div>
+    <div class="container" id="errors"></div>
+    <div class="container" id="result"></div>
+    <script src="/javascripts/script.js"></script>
+    <script src="/javascripts/bootstrap.bundle.min.js"></script>
+    <script src="/javascripts/bootstrap-tagsinput.js"></script>
+</body>
+
+</html>
